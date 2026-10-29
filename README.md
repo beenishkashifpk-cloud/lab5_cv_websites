@@ -6,6 +6,7 @@ Lab Task 1: present my CV as a single-page (landing page) website where scrollin
 
 - HTML5 (semantic sections)
 - CSS3 (Flexbox, CSS Grid, CSS variables, media queries)
+- Vanilla JavaScript (scroll effects and the Web Crypto API demo)
 - Google Fonts: Bricolage Grotesque and Figtree
 - No frameworks and no JavaScript libraries
 
@@ -21,7 +22,7 @@ Claude (Anthropic) was used to generate the first version of the code. I reviewe
 > Use readable, standard font sizes, a polished look, and make it responsive for mobile screens.
 > Make the design suitable for an experienced teacher to evaluate.
 
-Follow-up changes I requested: update to 5th semester, remove marks from ICS and Matriculation, add the certificate, and increase font sizes.
+Follow-up changes I requested: update to 5th semester, remove marks from ICS and Matriculation, add the certificate, increase font sizes, and make the design more creative with an interactive demo.
 
 ## Features
 
@@ -30,6 +31,8 @@ Follow-up changes I requested: update to 5th semester, remove marks from ICS and
 - Quick facts: CGPA, semester, projects, scholarship
 - Sections: About, Education, Technical Skills, Projects, Certifications and Achievements, Contact
 - Google certificate with a verification link
+- Interactive demo: encrypt, decrypt and tamper with a message using AES-256-GCM and SHA-256 (Web Crypto API)
+- Scroll progress bar, active menu highlight, back-to-top button, and an entrance animation in the hero
 - Responsive layout (desktop, tablet, mobile)
 - Keyboard focus styles and print-friendly layout
 
@@ -46,6 +49,7 @@ Follow-up changes I requested: update to 5th semester, remove marks from ICS and
 cv-single-page/
 ├── index.html
 ├── style.css
+├── script.js
 ├── README.md
 └── images/
     ├── photo.jpg
@@ -59,5 +63,4 @@ cv-single-page/
 
 ## Author
 
-Beenish, BSCS, Qarshi University, Lahore# lab5_cv_websites
-
+Beenish , BSCS, Qarshi University, Lahore

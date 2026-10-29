@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beenish| Computer Science Student</title>
+  <title>Beenish | Computer Science Student</title>
   <meta name="description" content="CV of Beenish Bibi, BSCS student and aspiring data and web developer.">
+  <meta name="theme-color" content="#0b2e36">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
 
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
@@ -45,11 +50,16 @@
           </div>
         </div>
 
-        <!-- PHOTO: save your picture as images/photo.jpg (see notes). -->
-        <div class="photo-frame">
-          <span class="photo-initials" aria-hidden="true">BB</span>
-          <img src="images/photo.jpg" alt="Portrait of Beenish Bibi" width="320" height="400"
-               onerror="this.style.display='none'">
+        <!-- PHOTO: save your picture as images/photo.jpg -->
+        <div class="photo-wrap">
+          <div class="photo-frame">
+            <span class="photo-initials" aria-hidden="true">BB</span>
+            <img src="images/photo.jpg" alt="Portrait of Beenish Bibi" width="320" height="400"
+                 onerror="this.style.display='none'">
+          </div>
+          <span class="tag tag-1" aria-hidden="true">Python</span>
+          <span class="tag tag-2" aria-hidden="true">SQL</span>
+          <span class="tag tag-3" aria-hidden="true">AES-256</span>
         </div>
       </div>
     </section>
@@ -70,7 +80,7 @@
         <div>
           <h2>About me</h2>
           <p>
-            I am a motivated BSCS student in my 5th semester at Qarshi University with a CGPA of 3.66
+            I am a motivated BSCS student in my 5th semester at Qarshi University with a CGPA of 3.66.
             I have hands-on experience in Python, Java OOP, SQL and web development.
           </p>
           <p>
@@ -104,7 +114,6 @@
           <li>
             <div class="tl-head">
               <h3>Intermediate in Computer Science (ICS)</h3>
-              
             </div>
             <p class="tl-place">Government College Chung</p>
             <ul>
@@ -114,7 +123,6 @@
           <li>
             <div class="tl-head">
               <h3>Matriculation, Science Group</h3>
-              
             </div>
             <p class="tl-place">Government Girls Higher Secondary School Chung</p>
             <ul>
@@ -195,6 +203,33 @@
           </article>
 
         </div>
+
+        <!-- INTERACTIVE DEMO -->
+        <section class="demo" id="crypto-demo" aria-labelledby="demo-title">
+          <h3 id="demo-title">Try it: encryption in your browser</h3>
+          <p class="demo-intro">
+            A small demo of the ideas behind my Secure File Transfer project. It uses AES-256-GCM and SHA-256
+            from the browser’s Web Crypto API (my project uses EAX mode in Python). Nothing leaves your device.
+          </p>
+
+          <label class="demo-label" for="demo-message">Message</label>
+          <input class="demo-input" id="demo-message" type="text" maxlength="200" value="Hello, this is my CV." autocomplete="off">
+
+          <div class="demo-actions">
+            <button class="btn btn-amber" type="button" id="btn-encrypt">Encrypt</button>
+            <button class="btn btn-outline" type="button" id="btn-decrypt" disabled>Decrypt</button>
+            <button class="btn btn-outline" type="button" id="btn-tamper" disabled>Tamper with data</button>
+          </div>
+
+          <dl class="demo-out">
+            <div><dt>Secret key</dt><dd id="out-key">Press Encrypt</dd></div>
+            <div><dt>Encrypted data</dt><dd id="out-cipher">Press Encrypt</dd></div>
+            <div><dt>SHA-256 hash</dt><dd id="out-hash">Press Encrypt</dd></div>
+            <div><dt>Decrypted message</dt><dd id="out-plain">Press Encrypt, then Decrypt</dd></div>
+          </dl>
+
+          <p class="demo-status" id="demo-status" role="status" aria-live="polite"></p>
+        </section>
       </div>
     </section>
 
@@ -227,7 +262,6 @@
           <div>
             <h3>Achievements</h3>
             <ul class="check-list">
-              
               <li>Certificate of Merit, Government College Chung (ICS)</li>
               <li>Certificate of Excellence, GGHS Chung (Matriculation)</li>
             </ul>
@@ -250,7 +284,7 @@
           <li><a href="mailto:241-0020@qu.edu.pk">241-0020@qu.edu.pk</a></li>
           <li><a href="tel:+923214947467">+92-321-4947467</a></li>
           <li><a href="https://linkedin.com/in/beenish-kashif-8385a1354" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://github.com/beenishkashif820-web" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://github.com/beenishkashifpk-cloud" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
       </div>
     </section>
@@ -258,8 +292,10 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Beenish Bibi</p>
+    <p>© 2026 Beenish</p>
   </footer>
+
+  <a class="to-top" href="#top" aria-label="Back to top">&#8593;</a>
 
 </body>
 </html>
